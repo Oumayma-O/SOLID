@@ -1,6 +1,6 @@
 package com.directi.training.isp.exercise;
 
-public interface Door
+public interface ITimeDoor extends Door
 {
     void lock();
 
@@ -9,4 +9,6 @@ public interface Door
     void open();
 
     void close();
+
+    void timeOutCallback();
 }
