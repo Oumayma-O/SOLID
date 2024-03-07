@@ -11,6 +11,10 @@ public class CarDb {
             new Car("3", "Megane", "Renault")
     );
 
+    public static List<Car> GetAllCars() {
+        return _carsDb;
+    }
+
     public Car getFromDb(final String carId) {
         for (Car car : _carsDb) {
             if (car.getId().equals(carId)) {
